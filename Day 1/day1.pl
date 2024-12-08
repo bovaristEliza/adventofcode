@@ -26,9 +26,7 @@ take_smaller(List1, List2, [Diff|DiffList]) :-
 main :-
     % Open file stream
     open('input.pl', read, Stream),
-    % Call the predicate
     read_lines(Stream, IDsEven, IDsOdd),
-    % Print the IDs (for debugging purposes)
     %writeln(IDsEven),
     %writeln(IDsOdd),
     %check the smallest number in the first list and second list and calc diff
